@@ -1,0 +1,90 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using digitalpayment3.Services;
+
+namespace digitalpayment3.Controllers
+{
+    [Authorize]
+    public class AccountController : Controller
+    {
+        private readonly NodeApiService _nodeApiService;
+
+        public AccountController(NodeApiService nodeApiService)
+        {
+            _nodeApiService = nodeApiService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            ViewBag.PageTitle = "Hesaplarım";
+            
+            var token = HttpContext.Session.GetString("NodeApiToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Oturum süresi dolmuş. Lütfen tekrar giriş yapın.";
+                return RedirectToAction("Login", "Auth");
+            }
+
+            var result = await _nodeApiService.GetMyAccountsAsync(token);
+            
+            if (result.Success && result.Data != null)
+            {
+                return View(result.Data);
+            }
+
+            TempData["ErrorMessage"] = result.ErrorMessage;
+            return View(new List<AccountInfo>());
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            ViewBag.PageTitle = "Hesap Detayı";
+            
+            var token = HttpContext.Session.GetString("NodeApiToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Oturum süresi dolmuş. Lütfen tekrar giriş yapın.";
+                return RedirectToAction("Login", "Auth");
+            }
+
+            var result = await _nodeApiService.GetAccountByIdAsync(token, id);
+            
+            if (result.Success && result.Data != null)
+            {
+                return View(result.Data);
+            }
+
+            TempData["ErrorMessage"] = "Hesap bulunamadı!";
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            ViewBag.PageTitle = "Yeni Hesap Oluştur";
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(string currency)
+        {
+            var token = HttpContext.Session.GetString("NodeApiToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Oturum süresi dolmuş. Lütfen tekrar giriş yapın.";
+                return RedirectToAction("Login", "Auth");
+            }
+
+            var result = await _nodeApiService.CreateAccountAsync(token, currency);
+            
+            if (result.Success)
+            {
+                TempData["SuccessMessage"] = "Hesap başarıyla oluşturuldu!";
+                return RedirectToAction("Index");
+            }
+
+            TempData["ErrorMessage"] = result.ErrorMessage;
+            return View();
+        }
+    }
+}

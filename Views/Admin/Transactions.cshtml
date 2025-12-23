@@ -1,0 +1,107 @@
+@model List<digitalpayment3.Models.TransactionViewModel>
+
+@{
+    ViewBag.PageTitle = "Ýþlem Yönetimi";
+}
+
+<div class="row mb-4">
+    <div class="col">
+        <h2 class="fw-bold">
+            <i class="bi bi-arrow-left-right"></i> Ýþlem Yönetimi
+        </h2>
+        <p class="text-muted">Sistemdeki tüm iþlemler</p>
+    </div>
+    <div class="col text-end">
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Dashboard'a Dön
+        </a>
+    </div>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-header bg-info text-white">
+        <h5 class="mb-0"><i class="bi bi-list"></i> Ýþlem Listesi (@Model.Count)</h5>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Ýþlem ID</th>
+                        <th>Hesap ID</th>
+                        <th>Tür</th>
+                        <th>Tutar</th>
+                        <th>Durum</th>
+                        <th>Açýklama</th>
+                        <th>Tarih</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var tx in Model)
+                    {
+                        <tr>
+                            <td><strong>#@tx.Id</strong></td>
+                            <td>
+                                <a asp-controller="Account" asp-action="Details" asp-route-id="@tx.AccountId">
+                                    Hesap #@tx.AccountId
+                                </a>
+                            </td>
+                            <td>
+                                @if (tx.Type == "Deposit")
+                                {
+                                    <span class="badge bg-success">
+                                        <i class="bi bi-arrow-down-circle"></i> Yatýrma
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">
+                                        <i class="bi bi-arrow-up-circle"></i> Çekme
+                                    </span>
+                                }
+                            </td>
+                            <td>
+                                <strong class="@(tx.Type == "Deposit" ? "text-success" : "text-danger")">
+                                    @(tx.Type == "Deposit" ? "+" : "-")@tx.Amount.ToString("N2") TL
+                                </strong>
+                            </td>
+                            <td>
+                                @if (tx.Status == "Success")
+                                {
+                                    <span class="badge bg-success">Baþarýlý</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Baþarýsýz</span>
+                                }
+                            </td>
+                            <td>
+                                <small>@(string.IsNullOrEmpty(tx.Description) ? "-" : tx.Description)</small>
+                            </td>
+                            <td>@tx.CreatedAt.ToString("dd.MM.yyyy HH:mm")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card bg-success text-white">
+            <div class="card-body text-center">
+                <h4>@Model.Where(t => t.Type == "Deposit").Sum(t => t.Amount).ToString("N2") TL</h4>
+                <p class="mb-0">Toplam Yatýrýlan</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card bg-danger text-white">
+            <div class="card-body text-center">
+                <h4>@Model.Where(t => t.Type == "Withdraw").Sum(t => t.Amount).ToString("N2") TL</h4>
+                <p class="mb-0">Toplam Çekilen</p>
+            </div>
+        </div>
+    </div>
+</div>

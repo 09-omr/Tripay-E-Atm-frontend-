@@ -1,0 +1,51 @@
+﻿@model digitalpayment3.Models.AccountViewModel
+
+<div class="card shadow-sm border-0 h-100">
+    <div class="card-header bg-primary text-white">
+        <h6 class="mb-0">
+            <i class="bi bi-wallet2"></i> @Model.Currency Hesabı
+        </h6>
+    </div>
+    <div class="card-body">
+        <div class="text-center mb-3">
+            <h3 class="text-primary mb-0">@Model.Balance.ToString("N2")</h3>
+            <small class="text-muted">@Model.Currency</small>
+        </div>
+        <hr />
+        <dl class="row mb-0 small">
+            <dt class="col-6">Hesap Sahibi:</dt>
+            <dd class="col-6">@Model.OwnerName</dd>
+
+            <dt class="col-6">Durum:</dt>
+            <dd class="col-6">
+                @if (Model.IsActive)
+                {
+                    <span class="badge bg-success">Aktif</span>
+                }
+                else
+                {
+                    <span class="badge bg-danger">Pasif</span>
+                }
+            </dd>
+
+            <dt class="col-6">Oluşturma:</dt>
+            <dd class="col-6">@Model.CreatedAt.ToString("dd.MM.yyyy")</dd>
+        </dl>
+    </div>
+    <div class="card-footer bg-transparent">
+        <div class="d-grid gap-2">
+            <a asp-controller="Transaction" asp-action="Deposit" asp-route-accountId="@Model.Id" 
+               class="btn btn-success btn-sm">
+                <i class="bi bi-plus-circle"></i> Para Yatır
+            </a>
+            <a asp-controller="Transaction" asp-action="Withdraw" asp-route-accountId="@Model.Id" 
+               class="btn btn-danger btn-sm">
+                <i class="bi bi-dash-circle"></i> Para Çek
+            </a>
+            <a asp-controller="Account" asp-action="Details" asp-route-id="@Model.Id" 
+               class="btn btn-info btn-sm">
+                <i class="bi bi-info-circle"></i> Detaylar
+            </a>
+        </div>
+    </div>
+</div>

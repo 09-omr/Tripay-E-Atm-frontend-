@@ -1,0 +1,111 @@
+@model digitalpayment3.Services.ExchangeRates
+
+@{
+    ViewBag.PageTitle = "API Döviz Kurlarý";
+}
+
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <h2 class="fw-bold mb-4">
+            <i class="bi bi-currency-exchange"></i> API Döviz Kurlarý
+        </h2>
+
+        @if (Model != null)
+        {
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="bi bi-graph-up"></i> @Model.Base Bazýnda Döviz Kurlarý
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <p class="mb-1"><strong>Baz Para Birimi:</strong> <span class="badge bg-primary">@Model.Base</span></p>
+                            <p class="mb-1"><strong>Tutar:</strong> @Model.Amount</p>
+                            <p class="mb-0"><strong>Tarih:</strong> @Model.Date</p>
+                        </div>
+                    </div>
+
+                    @if (Model.Rates != null && Model.Rates.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Para Birimi</th>
+                                        <th>Ýkon</th>
+                                        <th class="text-end">Kur</th>
+                                        <th class="text-end">100 @Model.Base =</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var rate in Model.Rates.OrderBy(r => r.Key))
+                                    {
+                                        <tr>
+                                            <td>
+                                                <strong>@rate.Key</strong>
+                                            </td>
+                                            <td>
+                                                @switch (rate.Key)
+                                                {
+                                                    case "USD":
+                                                        <i class="bi bi-currency-dollar text-success"></i>
+                                                        break;
+                                                    case "EUR":
+                                                        <i class="bi bi-currency-euro text-primary"></i>
+                                                        break;
+                                                    case "GBP":
+                                                        <i class="bi bi-currency-pound text-warning"></i>
+                                                        break;
+                                                    default:
+                                                        <i class="bi bi-currency-exchange text-secondary"></i>
+                                                        break;
+                                                }
+                                            </td>
+                                            <td class="text-end">
+                                                <span class="badge bg-success">@rate.Value.ToString("F5")</span>
+                                            </td>
+                                            <td class="text-end">
+                                                <strong>@((rate.Value * 100).ToString("F2")) @rate.Key</strong>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="alert alert-success">
+                <i class="bi bi-check-circle"></i> 
+                <strong>Döviz kurlarý baþarýyla alýndý!</strong> 
+                Node.js API üzerinden Frankfurter API'den çekildi.
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger">
+                <i class="bi bi-exclamation-triangle"></i> 
+                Döviz kurlarý alýnamadý. Node.js API'nin çalýþtýðýndan emin olun!
+            </div>
+        }
+
+        <div class="card border-info">
+            <div class="card-body">
+                <h6 class="text-info"><i class="bi bi-info-circle"></i> API Bilgisi</h6>
+                <p class="small mb-0">
+                    Endpoint: <code>GET http://localhost:3000/api/rates?base=TRY</code><br />
+                    Kaynak: Frankfurter API (<code>https://api.frankfurter.app</code>)
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Geri
+            </a>
+        </div>
+    </div>
+</div>

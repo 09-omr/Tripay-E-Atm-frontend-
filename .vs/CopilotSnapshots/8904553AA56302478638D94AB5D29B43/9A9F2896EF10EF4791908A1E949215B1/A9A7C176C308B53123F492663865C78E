@@ -1,0 +1,21 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using digitalpayment3.Data;
+
+namespace digitalpayment3.ViewComponents
+{
+    public class RecentTransactionsViewComponent : ViewComponent
+    {
+        private readonly TransactionRepository _transactionRepository;
+
+        public RecentTransactionsViewComponent(IConfiguration configuration)
+        {
+            _transactionRepository = new TransactionRepository(configuration);
+        }
+
+        public IViewComponentResult Invoke(int limit = 5)
+        {
+            var transactions = _transactionRepository.GetRecentTransactions(limit);
+            return View(transactions);
+        }
+    }
+}

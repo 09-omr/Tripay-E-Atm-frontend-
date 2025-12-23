@@ -1,0 +1,126 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using digitalpayment3.Models;
+using digitalpayment3.Data;
+
+namespace digitalpayment3.Controllers
+{
+    [Authorize]
+    public class TransactionController : Controller
+    {
+        private readonly TransactionRepository _transactionRepository;
+        private readonly AccountRepository _accountRepository;
+
+        public TransactionController(IConfiguration configuration)
+        {
+            _transactionRepository = new TransactionRepository(configuration);
+            _accountRepository = new AccountRepository(configuration);
+        }
+
+        public IActionResult Index(int accountId)
+        {
+            ViewBag.PageTitle = "İşlem Geçmişi";
+            ViewBag.AccountId = accountId;
+            var transactions = _transactionRepository.GetByAccountId(accountId);
+            return View(transactions);
+        }
+
+        [HttpGet]
+        public IActionResult Deposit(int accountId)
+        {
+            ViewBag.PageTitle = "Para Yatır";
+            var account = _accountRepository.GetById(accountId);
+            if (account == null)
+            {
+                TempData["ErrorMessage"] = "Hesap bulunamadı!";
+                return RedirectToAction("Index", "Account");
+            }
+            ViewBag.Account = account;
+            return View(new DepositViewModel { AccountId = accountId });
+        }
+
+        [HttpPost]
+        public IActionResult Deposit(DepositViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var account = _accountRepository.GetById(model.AccountId);
+                if (account != null)
+                {
+                    account.Balance += model.Amount;
+                    _accountRepository.Update(account);
+
+                    var transaction = new TransactionViewModel
+                    {
+                        AccountId = model.AccountId,
+                        Amount = model.Amount,
+                        Type = "Deposit",
+                        Status = "Success",
+                        Description = model.Description
+                    };
+                    _transactionRepository.Insert(transaction);
+
+                    TempData["SuccessMessage"] = $"{model.Amount:C} başarıyla yatırıldı!";
+                    return RedirectToAction("Index", "Account");
+                }
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Withdraw(int accountId)
+        {
+            ViewBag.PageTitle = "Para Çek";
+            var account = _accountRepository.GetById(accountId);
+            if (account == null)
+            {
+                TempData["ErrorMessage"] = "Hesap bulunamadı!";
+                return RedirectToAction("Index", "Account");
+            }
+            ViewBag.Account = account;
+            return View(new WithdrawViewModel { AccountId = accountId });
+        }
+
+        [HttpPost]
+        public IActionResult Withdraw(WithdrawViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var account = _accountRepository.GetById(model.AccountId);
+                if (account != null)
+                {
+                    if (account.Balance >= model.Amount)
+                    {
+                        account.Balance -= model.Amount;
+                        _accountRepository.Update(account);
+
+                        var transaction = new TransactionViewModel
+                        {
+                            AccountId = model.AccountId,
+                            Amount = model.Amount,
+                            Type = "Withdraw",
+                            Status = "Success",
+                            Description = model.Description
+                        };
+                        _transactionRepository.Insert(transaction);
+
+                        TempData["SuccessMessage"] = $"{model.Amount:C} başarıyla çekildi!";
+                        return RedirectToAction("Index", "Account");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("Amount", "Yetersiz bakiye!");
+                    }
+                }
+            }
+            return View(model);
+        }
+
+        public IActionResult Summary()
+        {
+            ViewBag.PageTitle = "İşlem Özeti";
+            var recentTransactions = _transactionRepository.GetRecentTransactions(10);
+            return View(recentTransactions);
+        }
+    }
+}

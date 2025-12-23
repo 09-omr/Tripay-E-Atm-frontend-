@@ -1,0 +1,142 @@
+@{
+    ViewBag.PageTitle = "Ana Sayfa";
+}
+
+<div class="row">
+    <div class="col-lg-8 mx-auto text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">
+            <i class="bi bi-wallet2"></i> Dijital Ödeme Sistemi
+        </h1>
+        <p class="lead text-muted">
+            Güvenli, hýzlý ve kolay dijital cüzdan çözümü ile paranýzý yönetin
+        </p>
+    </div>
+</div>
+
+<div class="row g-4 mb-5">
+    <div class="col-md-3">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-shield-check text-success" style="font-size: 3rem;"></i>
+                </div>
+                <h5 class="card-title">Güvenli</h5>
+                <p class="card-text text-muted">
+                    Son teknoloji güvenlik protokolleri ile paranýz güvende
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-lightning-charge text-warning" style="font-size: 3rem;"></i>
+                </div>
+                <h5 class="card-title">Hýzlý</h5>
+                <p class="card-text text-muted">
+                    Anýnda para transferi ve iþlem onaylarý
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-graph-up text-primary" style="font-size: 3rem;"></i>
+                </div>
+                <h5 class="card-title">Kolay</h5>
+                <p class="card-text text-muted">
+                    Kullanýcý dostu arayüz ile kolay iþlem takibi
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card h-100 shadow-sm border-0 bg-info text-white">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-cloud-arrow-up" style="font-size: 3rem;"></i>
+                </div>
+                <h5 class="card-title">Node API</h5>
+                <p class="card-text">
+                    REST, gRPC ve SOAP entegrasyonu
+                </p>
+                <a asp-controller="NodeApi" asp-action="Index" class="btn btn-light btn-sm">
+                    <i class="bi bi-arrow-right"></i> Keþfet
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-lg-8 mx-auto">
+        <div class="card shadow border-0 bg-primary text-white">
+            <div class="card-body p-5 text-center">
+                <h3 class="mb-3">Hemen Baþlayýn</h3>
+                <p class="mb-4">Dijital cüzdanýnýzý oluþturun ve finansal özgürlüðe kavuþun</p>
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <a asp-controller="Account" asp-action="Index" class="btn btn-light btn-lg px-5 me-2">
+                        <i class="bi bi-wallet2"></i> Hesaplarým
+                    </a>
+                    <a asp-controller="NodeApi" asp-action="Index" class="btn btn-outline-light btn-lg px-5">
+                        <i class="bi bi-cloud-arrow-up"></i> Node API
+                    </a>
+                }
+                else
+                {
+                    <a asp-controller="Auth" asp-action="Login" class="btn btn-light btn-lg px-5">
+                        <i class="bi bi-box-arrow-in-right"></i> Giriþ Yap
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-10 mx-auto">
+        <h3 class="text-center mb-4">Özellikler</h3>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-check-circle-fill text-success me-3" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h6>Çoklu Para Birimi Desteði</h6>
+                        <p class="text-muted small">TRY, USD, EUR ve daha fazlasý</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-check-circle-fill text-success me-3" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h6>Gerçek Zamanlý Ýþlem Takibi</h6>
+                        <p class="text-muted small">Tüm iþlemlerinizi anlýk takip edin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-check-circle-fill text-success me-3" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h6>Node.js API Entegrasyonu</h6>
+                        <p class="text-muted small">REST, gRPC ve SOAP desteði</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-check-circle-fill text-success me-3" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h6>7/24 Destek</h6>
+                        <p class="text-muted small">Her zaman yanýnýzdayýz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

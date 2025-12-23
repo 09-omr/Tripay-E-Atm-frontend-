@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "FAsXaC/hY5A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\damar\\OneDrive\\Masaüstü\\Tripay Projesi\\digitalpayment3\\digitalpayment3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\damar\\.nuget\\packages\\grpc.core.api\\2.71.0\\grpc.core.api.2.71.0.nupkg.sha512",
+    "C:\\Users\\damar\\.nuget\\packages\\grpc.net.client\\2.71.0\\grpc.net.client.2.71.0.nupkg.sha512",
+    "C:\\Users\\damar\\.nuget\\packages\\grpc.net.common\\2.71.0\\grpc.net.common.2.71.0.nupkg.sha512",
+    "C:\\Users\\damar\\.nuget\\packages\\npgsql\\10.0.0\\npgsql.10.0.0.nupkg.sha512",
+    "C:\\Users\\damar\\.nuget\\packages\\system.servicemodel.http\\10.0.652802\\system.servicemodel.http.10.0.652802.nupkg.sha512",
+    "C:\\Users\\damar\\.nuget\\packages\\system.servicemodel.primitives\\10.0.652802\\system.servicemodel.primitives.10.0.652802.nupkg.sha512"
+  ],
+  "logs": []
+}

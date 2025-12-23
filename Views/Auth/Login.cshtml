@@ -1,0 +1,71 @@
+@model digitalpayment3.Models.LoginViewModel
+
+@{
+    ViewBag.PageTitle = "Giriþ Yap";
+}
+
+<div class="row">
+    <div class="col-lg-5 col-md-7 mx-auto">
+        <div class="text-center mb-4">
+            <div class="mb-3">
+                <i class="bi bi-person-circle text-primary" style="font-size: 4rem;"></i>
+            </div>
+            <h1 class="display-6 fw-bold">Giriþ Yap</h1>
+            <p class="text-muted">Hesabýnýza eriþmek için giriþ yapýn</p>
+        </div>
+
+        <div class="card shadow border-0">
+            <div class="card-body p-4">
+                <form asp-action="Login" method="post">
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">E-posta Adresi</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                            <input asp-for="Email" class="form-control" placeholder="ornek@email.com" />
+                        </div>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label">Þifre</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                            <input asp-for="Password" class="form-control" type="password" placeholder="••••••••" />
+                        </div>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input asp-for="RememberMe" class="form-check-input" type="checkbox" />
+                        <label asp-for="RememberMe" class="form-check-label">
+                            Beni Hatýrla
+                        </label>
+                    </div>
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="bi bi-box-arrow-in-right"></i> Giriþ Yap
+                        </button>
+                        <a asp-action="Register" class="btn btn-outline-primary">
+                            <i class="bi bi-person-plus"></i> Yeni Hesap Oluþtur
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="alert alert-info mt-3">
+            <h6><i class="bi bi-info-circle"></i> Bilgi</h6>
+            <p class="mb-0 small">
+                Giriþ ve kayýt iþlemleri Node.js API (<code>http://localhost:3000</code>) üzerinden yapýlmaktadýr.<br />
+                Hesabýnýz yoksa yukarýdaki butonu kullanarak yeni hesap oluþturabilirsiniz.
+            </p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

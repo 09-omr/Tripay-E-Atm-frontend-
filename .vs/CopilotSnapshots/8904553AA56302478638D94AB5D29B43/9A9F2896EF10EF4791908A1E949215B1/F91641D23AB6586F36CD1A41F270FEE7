@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.PageTitle = "Ana Sayfa";
+}
+
+<div class="row">
+    <div class="col-lg-8 mx-auto text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">
+            <i class="bi bi-wallet2"></i> Dijital Ödeme Sistemi
+        </h1>
+        <p class="lead text-muted">
+            Güvenli, hızlı ve kolay dijital cüzdan çözümü ile paranızı yönetin
+        </p>
+    </div>
+</div>
+
+<div class="row g-4 mb-5">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-shield-check text-success" style="font-size: 3rem;"></i>
+                </div>
+                <h5 class="card-title">Güvenli</h5>
+                <p class="card-text text-muted">
+                    Son teknoloji güvenlik protokolleri ile paranız güvende
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-lightning-charge text-warning" style="font-size: 3rem;"></i>
+                </div>
+                <h5 class="card-title">Hızlı</h5>
+                <p class="card-text text-muted">
+                    Anında para transferi ve işlem onayları
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-graph-up text-primary" style="font-size: 3rem;"></i>
+                </div>
+                <h5 class="card-title">Kolay</h5>
+                <p class="card-text text-muted">
+                    Kullanıcı dostu arayüz ile kolay işlem takibi
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-lg-8 mx-auto">
+        <div class="card shadow border-0 bg-primary text-white">
+            <div class="card-body p-5 text-center">
+                <h3 class="mb-3">Hemen Başlayın</h3>
+                <p class="mb-4">Dijital cüzdanınızı oluşturun ve finansal özgürlüğe kavuşun</p>
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <a asp-controller="Account" asp-action="Index" class="btn btn-light btn-lg px-5">
+                        <i class="bi bi-wallet2"></i> Hesaplarım
+                    </a>
+                }
+                else
+                {
+                    <a asp-controller="Auth" asp-action="Login" class="btn btn-light btn-lg px-5">
+                        <i class="bi bi-box-arrow-in-right"></i> Giriş Yap
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-10 mx-auto">
+        <h3 class="text-center mb-4">Özellikler</h3>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-check-circle-fill text-success me-3" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h6>Çoklu Para Birimi Desteği</h6>
+                        <p class="text-muted small">TRY, USD, EUR ve daha fazlası</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-check-circle-fill text-success me-3" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h6>Gerçek Zamanlı İşlem Takibi</h6>
+                        <p class="text-muted small">Tüm işlemlerinizi anlık takip edin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-check-circle-fill text-success me-3" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h6>Detaylı Raporlama</h6>
+                        <p class="text-muted small">Gelir-gider analizi ve raporlar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-check-circle-fill text-success me-3" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h6>7/24 Destek</h6>
+                        <p class="text-muted small">Her zaman yanınızdayız</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

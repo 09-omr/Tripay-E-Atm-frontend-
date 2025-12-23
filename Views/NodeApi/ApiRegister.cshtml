@@ -1,0 +1,52 @@
+@{
+    ViewBag.PageTitle = "API Kayýt Test";
+}
+
+<div class="row">
+    <div class="col-lg-5 mx-auto">
+        <div class="text-center mb-4">
+            <div class="mb-3">
+                <i class="bi bi-person-plus text-primary" style="font-size: 4rem;"></i>
+            </div>
+            <h1 class="display-6 fw-bold">API Kayýt Test</h1>
+            <p class="text-muted">Node.js REST API'ye yeni kullanýcý oluþturun</p>
+        </div>
+
+        <div class="card shadow border-0">
+            <div class="card-body p-4">
+                <form asp-action="ApiRegister" method="post">
+                    <div class="mb-3">
+                        <label class="form-label">Ad Soyad</label>
+                        <input name="fullName" type="text" class="form-control" placeholder="Ad Soyad" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">E-posta</label>
+                        <input name="email" type="email" class="form-control" placeholder="ornek@test.com" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Þifre</label>
+                        <input name="password" type="password" class="form-control" placeholder="••••••••" required />
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="bi bi-person-plus"></i> API'ye Kayýt Ol
+                        </button>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Geri
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="alert alert-info mt-3">
+            <h6><i class="bi bi-info-circle"></i> Bilgi</h6>
+            <p class="mb-0 small">
+                Kayýt baþarýlý olursa JWT token otomatik olarak kaydedilir ve API hesaplarýna yönlendirilirsiniz.
+            </p>
+        </div>
+    </div>
+</div>

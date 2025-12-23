@@ -1,0 +1,76 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using digitalpayment3.Data;
+using System.Text.Json;
+
+namespace digitalpayment3.Controllers
+{
+    [Authorize(Roles = "Admin")]
+    public class AdminController : Controller
+    {
+        private readonly UserRepository _userRepository;
+        private readonly AccountRepository _accountRepository;
+        private readonly TransactionRepository _transactionRepository;
+        private readonly IConfiguration _configuration;
+
+        public AdminController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+            _userRepository = new UserRepository(configuration);
+            _accountRepository = new AccountRepository(configuration);
+            _transactionRepository = new TransactionRepository(configuration);
+        }
+
+        public IActionResult Index()
+        {
+            ViewBag.PageTitle = "Admin Paneli";
+            ViewBag.TotalUsers = _userRepository.GetTotalUserCount();
+            ViewBag.TotalAccounts = _accountRepository.GetTotalAccountCount();
+            ViewBag.TotalTransactions = _transactionRepository.GetTotalTransactionCount();
+            return View();
+        }
+
+        public IActionResult Users()
+        {
+            ViewBag.PageTitle = "Kullanıcı Yönetimi";
+            var users = _userRepository.GetAll();
+            return View(users);
+        }
+
+        public IActionResult Accounts()
+        {
+            ViewBag.PageTitle = "Hesap Yönetimi";
+            var accounts = _accountRepository.GetAll();
+            return View(accounts);
+        }
+
+        public IActionResult Transactions()
+        {
+            ViewBag.PageTitle = "İşlem Yönetimi";
+            var transactions = _transactionRepository.GetAll();
+            return View(transactions);
+        }
+
+        public async Task<IActionResult> Rates()
+        {
+            ViewBag.PageTitle = "Döviz Kurları";
+            
+            try
+            {
+                using var httpClient = new HttpClient();
+                var nodeApiUrl = _configuration["NodeApiUrl"];
+                var response = await httpClient.GetStringAsync($"{nodeApiUrl}/api/rates?base=TRY");
+                ViewBag.RatesJson = response;
+                
+                var ratesData = JsonSerializer.Deserialize<Dictionary<string, object>>(response);
+                ViewBag.RatesData = ratesData;
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = $"Döviz kurları alınamadı: {ex.Message}";
+            }
+
+            return View();
+        }
+    }
+}

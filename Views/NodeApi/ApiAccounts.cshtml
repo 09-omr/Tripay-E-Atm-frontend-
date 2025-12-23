@@ -1,0 +1,104 @@
+@model List<digitalpayment3.Services.AccountInfo>
+
+@{
+    ViewBag.PageTitle = "API Hesaplarý";
+}
+
+<div class="row mb-4">
+    <div class="col">
+        <h2 class="fw-bold">
+            <i class="bi bi-cloud-arrow-up"></i> API Hesaplarý
+        </h2>
+        <p class="text-muted">Node.js REST API üzerinden yönetilen hesaplar</p>
+    </div>
+    <div class="col text-end">
+        <a asp-action="ApiCreateAccount" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Yeni API Hesabý
+        </a>
+        <a asp-action="ApiLogout" class="btn btn-danger">
+            <i class="bi bi-box-arrow-right"></i> API Çýkýþ
+        </a>
+    </div>
+</div>
+
+@if (Model != null && Model.Any())
+{
+    <div class="row g-4">
+        @foreach (var account in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="bi bi-wallet2"></i> Hesap #@account.Id
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row mb-0">
+                            <dt class="col-sm-5">Para Birimi:</dt>
+                            <dd class="col-sm-7">
+                                <span class="badge bg-secondary">@account.Currency</span>
+                            </dd>
+
+                            <dt class="col-sm-5">Bakiye:</dt>
+                            <dd class="col-sm-7">
+                                <strong class="text-primary fs-4">@account.Balance</strong>
+                            </dd>
+
+                            <dt class="col-sm-5">Durum:</dt>
+                            <dd class="col-sm-7">
+                                @if (account.IsActive)
+                                {
+                                    <span class="badge bg-success">Aktif</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Pasif</span>
+                                }
+                            </dd>
+
+                            <dt class="col-sm-5">Oluþturma:</dt>
+                            <dd class="col-sm-7">
+                                <small>@account.CreatedAt.ToString("dd.MM.yyyy")</small>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <div class="d-grid gap-2">
+                            <a asp-action="ApiDeposit" asp-route-accountId="@account.Id" 
+                               class="btn btn-success btn-sm">
+                                <i class="bi bi-plus-circle"></i> Para Yatýr
+                            </a>
+                            <a asp-action="ApiWithdraw" asp-route-accountId="@account.Id" 
+                               class="btn btn-danger btn-sm">
+                                <i class="bi bi-dash-circle"></i> Para Çek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="alert alert-success mt-4">
+        <i class="bi bi-check-circle"></i> 
+        <strong>@Model.Count hesap bulundu.</strong> Toplam bakiye: @Model.Sum(a => decimal.Parse(a.Balance))
+    </div>
+}
+else
+{
+    <div class="alert alert-info">
+        <h5><i class="bi bi-info-circle"></i> Henüz API hesabýnýz yok</h5>
+        <p class="mb-0">Node.js API üzerinden yeni bir hesap oluþturabilirsiniz.</p>
+    </div>
+}
+
+<div class="card mt-4 border-info">
+    <div class="card-body">
+        <h6 class="text-info"><i class="bi bi-info-circle"></i> API Bilgisi</h6>
+        <p class="small mb-0">
+            Bu hesaplar Node.js REST API (<code>http://localhost:3000/api/accounts</code>) 
+            üzerinden yönetilmektedir. JWT authentication kullanýlmaktadýr.
+        </p>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using digitalpayment3.Data;
+using digitalpayment3.Models;
+
+namespace digitalpayment3.ViewComponents
+{
+    public class RecentTransactionsViewComponent : ViewComponent
+    {
+        private readonly TransactionRepository _transactionRepository;
+
+        public RecentTransactionsViewComponent(IConfiguration configuration)
+        {
+            _transactionRepository = new TransactionRepository(configuration);
+        }
+
+        public IViewComponentResult Invoke(int count = 5)
+        {
+            // Kullanıcının ID'sini al
+            var userIdClaim = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
+            
+            if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+            {
+                // Kullanıcı giriş yapmamışsa boş liste döndür
+                return View(new List<TransactionViewModel>());
+            }
+
+            // Son N işlemi getir
+            var transactions = _transactionRepository.GetRecentByUserId(userId, count);
+            return View(transactions);
+        }
+    }
+}

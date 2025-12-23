@@ -1,0 +1,98 @@
+@{
+    ViewBag.PageTitle = "Raporlar";
+}
+
+<div class="row mb-4">
+    <div class="col">
+        <h2 class="fw-bold">
+            <i class="bi bi-graph-up"></i> Raporlar ve Ýstatistikler
+        </h2>
+        <p class="text-muted">Sistem özet raporlarý</p>
+    </div>
+    <div class="col text-end">
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Dashboard'a Dön
+        </a>
+    </div>
+</div>
+
+<!-- Para Birimi Bazýnda Toplam Bakiyeler -->
+<div class="row g-4 mb-4">
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-currency-exchange text-primary" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 text-primary">@ViewBag.TotalBalanceTRY.ToString("N2")</h3>
+                <p class="mb-0">TRY Toplam Bakiye</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-currency-dollar text-success" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 text-success">@ViewBag.TotalBalanceUSD.ToString("N2")</h3>
+                <p class="mb-0">USD Toplam Bakiye</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-currency-euro text-info" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 text-info">@ViewBag.TotalBalanceEUR.ToString("N2")</h3>
+                <p class="mb-0">EUR Toplam Bakiye</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-currency-pound text-warning" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 text-warning">@ViewBag.TotalBalanceGBP.ToString("N2")</h3>
+                <p class="mb-0">GBP Toplam Bakiye</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ýþlem Ýstatistikleri -->
+<div class="row g-4 mb-4">
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm bg-success text-white">
+            <div class="card-body">
+                <h5><i class="bi bi-arrow-down-circle"></i> Toplam Yatýrýlan</h5>
+                <h2>@ViewBag.TotalDeposits.ToString("N2") TL</h2>
+                <p class="mb-0">Tüm para yatýrma iþlemleri toplamý</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm bg-danger text-white">
+            <div class="card-body">
+                <h5><i class="bi bi-arrow-up-circle"></i> Toplam Çekilen</h5>
+                <h2>@ViewBag.TotalWithdrawals.ToString("N2") TL</h2>
+                <p class="mb-0">Tüm para çekme iþlemleri toplamý</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Net Bakiye -->
+<div class="card border-0 shadow-sm bg-primary text-white">
+    <div class="card-body text-center">
+        <h5><i class="bi bi-bank"></i> Sistemdeki Net Bakiye</h5>
+        <h1>@((ViewBag.TotalDeposits - ViewBag.TotalWithdrawals).ToString("N2")) TL</h1>
+        <p class="mb-0">Yatýrýlan - Çekilen = Net Bakiye</p>
+    </div>
+</div>
+
+<!-- Bilgi -->
+<div class="alert alert-info mt-4">
+    <h5><i class="bi bi-info-circle"></i> Rapor Bilgileri</h5>
+    <ul class="mb-0">
+        <li>Tüm veriler PostgreSQL veritabanýndan gerçek zamanlý çekilmektedir</li>
+        <li>Bakiye hesaplamalarý tüm aktif hesaplarý kapsar</li>
+        <li>Ýþlem istatistikleri tüm baþarýlý iþlemleri içerir</li>
+    </ul>
+</div>

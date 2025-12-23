@@ -1,0 +1,25 @@
+﻿@model digitalpayment3.Models.AccountViewModel
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">@Model.Currency Hesabı</h6>
+        <h4 class="card-title">@Model.Balance.ToString("C")</h4>
+        <p class="card-text mb-2">
+            <small><i class="bi bi-person"></i> @Model.OwnerName</small>
+        </p>
+        <div class="d-flex gap-2">
+            <a asp-controller="Transaction" asp-action="Deposit" asp-route-accountId="@Model.Id" 
+               class="btn btn-success btn-sm">
+                <i class="bi bi-plus-circle"></i> Para Yatır
+            </a>
+            <a asp-controller="Transaction" asp-action="Withdraw" asp-route-accountId="@Model.Id" 
+               class="btn btn-danger btn-sm">
+                <i class="bi bi-dash-circle"></i> Para Çek
+            </a>
+            <a asp-controller="Transaction" asp-action="Index" asp-route-accountId="@Model.Id" 
+               class="btn btn-info btn-sm">
+                <i class="bi bi-clock-history"></i> Geçmiş
+            </a>
+        </div>
+    </div>
+</div>

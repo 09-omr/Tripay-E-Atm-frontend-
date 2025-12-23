@@ -1,0 +1,65 @@
+﻿@model digitalpayment3.Services.AccountInfo
+
+@{
+    ViewBag.PageTitle = "Hesap Detayı";
+}
+
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <h2 class="fw-bold mb-4">
+            <i class="bi bi-info-circle"></i> Hesap Detayı
+        </h2>
+
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Hesap #@Model.Id</h5>
+            </div>
+            <div class="card-body p-4">
+                <div class="text-center mb-4">
+                    <h1 class="display-4 text-primary mb-0">@Model.Balance</h1>
+                    <p class="text-muted">@Model.Currency</p>
+                </div>
+                <hr />
+                <dl class="row mb-0">
+                    <dt class="col-sm-4">Hesap ID:</dt>
+                    <dd class="col-sm-8"><strong>#@Model.Id</strong></dd>
+
+                    <dt class="col-sm-4">Kullanıcı ID:</dt>
+                    <dd class="col-sm-8">@Model.UserId</dd>
+
+                    <dt class="col-sm-4">Para Birimi:</dt>
+                    <dd class="col-sm-8"><span class="badge bg-secondary">@Model.Currency</span></dd>
+
+                    <dt class="col-sm-4">Durum:</dt>
+                    <dd class="col-sm-8">
+                        @if (Model.IsActive)
+                        {
+                            <span class="badge bg-success">Aktif</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Pasif</span>
+                        }
+                    </dd>
+
+                    <dt class="col-sm-4">Oluşturulma Tarihi:</dt>
+                    <dd class="col-sm-8">@Model.CreatedAt.ToString("dd.MM.yyyy HH:mm")</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="d-flex gap-2 mb-4">
+            <a asp-controller="Transaction" asp-action="Deposit" asp-route-accountId="@Model.Id" 
+               class="btn btn-success">
+                <i class="bi bi-plus-circle"></i> Para Yatır
+            </a>
+            <a asp-controller="Transaction" asp-action="Withdraw" asp-route-accountId="@Model.Id" 
+               class="btn btn-danger">
+                <i class="bi bi-dash-circle"></i> Para Çek
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Geri
+            </a>
+        </div>
+    </div>
+</div>

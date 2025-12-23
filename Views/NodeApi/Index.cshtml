@@ -1,0 +1,123 @@
+@{
+    ViewBag.PageTitle = "Node.js API Test";
+}
+
+<div class="row">
+    <div class="col-lg-10 mx-auto">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-primary">
+                <i class="bi bi-cloud-arrow-up"></i> Node.js API Entegrasyonu
+            </h1>
+            <p class="lead text-muted">REST API, gRPC ve SOAP servisleri ile entegrasyon</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-person-check text-success" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4 class="card-title">API Giriþ</h4>
+                        <p class="card-text text-muted">Node.js API'ye giriþ yapýn ve JWT token alýn</p>
+                        <a asp-action="ApiLogin" class="btn btn-success btn-lg">
+                            <i class="bi bi-box-arrow-in-right"></i> API'ye Giriþ Yap
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-person-plus text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4 class="card-title">API Kayýt</h4>
+                        <p class="card-text text-muted">Yeni kullanýcý oluþturun</p>
+                        <a asp-action="ApiRegister" class="btn btn-primary btn-lg">
+                            <i class="bi bi-person-plus"></i> API'ye Kayýt Ol
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-wallet2 text-warning" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4 class="card-title">API Hesaplar</h4>
+                        <p class="card-text text-muted">Node.js API üzerinden hesaplarýnýzý yönetin</p>
+                        <a asp-action="ApiAccounts" class="btn btn-warning btn-lg">
+                            <i class="bi bi-wallet2"></i> API Hesaplarý
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-currency-exchange text-info" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4 class="card-title">Döviz Kurlarý</h4>
+                        <p class="card-text text-muted">REST API'den döviz kurlarýný çekin</p>
+                        <a asp-action="ApiRates" class="btn btn-info btn-lg">
+                            <i class="bi bi-currency-exchange"></i> Döviz Kurlarý
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info mt-5">
+            <h5><i class="bi bi-info-circle"></i> API Bilgileri</h5>
+            <ul class="mb-0">
+                <li><strong>REST API</strong>: http://localhost:3000</li>
+                <li><strong>gRPC API</strong>: http://localhost:50051</li>
+                <li><strong>SOAP API</strong>: http://localhost:3001</li>
+            </ul>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header bg-dark text-white">
+                <h5 class="mb-0"><i class="bi bi-info-circle"></i> API Özellikleri</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6 class="text-primary">REST API</h6>
+                        <ul class="small">
+                            <li>JWT Authentication</li>
+                            <li>Kullanýcý kayýt/giriþ</li>
+                            <li>Hesap yönetimi</li>
+                            <li>Para yatýrma/çekme</li>
+                            <li>Döviz kurlarý</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="text-success">gRPC</h6>
+                        <ul class="small">
+                            <li>Yüksek performans</li>
+                            <li>Bakiye sorgulama</li>
+                            <li>Para yatýrma</li>
+                            <li>Binary protocol</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="text-warning">SOAP</h6>
+                        <ul class="small">
+                            <li>XML tabanlý</li>
+                            <li>WSDL desteði</li>
+                            <li>Hesap sorgulama</li>
+                            <li>Enterprise uyumlu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

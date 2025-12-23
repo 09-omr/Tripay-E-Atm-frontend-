@@ -1,0 +1,101 @@
+﻿@model List<digitalpayment3.Services.AccountInfo>
+
+@{
+    ViewBag.PageTitle = "Hesaplarım";
+}
+
+<div class="row mb-4">
+    <div class="col">
+        <h2 class="fw-bold">
+            <i class="bi bi-wallet2"></i> Hesaplarım
+        </h2>
+        <p class="text-muted">Node.js API üzerinden yönetilen hesaplarınız</p>
+    </div>
+    <div class="col text-end">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Yeni Hesap
+        </a>
+    </div>
+</div>
+
+@if (Model != null && Model.Any())
+{
+    <div class="row g-4">
+        @foreach (var account in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="bi bi-wallet2"></i> @account.Currency Hesabı
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <h2 class="text-primary mb-0">@account.Balance</h2>
+                            <small class="text-muted">@account.Currency</small>
+                        </div>
+                        <hr />
+                        <dl class="row mb-0 small">
+                            <dt class="col-sm-5">Hesap ID:</dt>
+                            <dd class="col-sm-7">#@account.Id</dd>
+
+                            <dt class="col-sm-5">Durum:</dt>
+                            <dd class="col-sm-7">
+                                @if (account.IsActive)
+                                {
+                                    <span class="badge bg-success">Aktif</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Pasif</span>
+                                }
+                            </dd>
+
+                            <dt class="col-sm-5">Oluşturma:</dt>
+                            <dd class="col-sm-7">@account.CreatedAt.ToString("dd.MM.yyyy")</dd>
+                        </dl>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <div class="d-grid gap-2">
+                            <a asp-controller="Transaction" asp-action="Deposit" asp-route-accountId="@account.Id" 
+                               class="btn btn-success btn-sm">
+                                <i class="bi bi-plus-circle"></i> Para Yatır
+                            </a>
+                            <a asp-controller="Transaction" asp-action="Withdraw" asp-route-accountId="@account.Id" 
+                               class="btn btn-danger btn-sm">
+                                <i class="bi bi-dash-circle"></i> Para Çek
+                            </a>
+                            <a asp-action="Details" asp-route-id="@account.Id" 
+                               class="btn btn-info btn-sm">
+                                <i class="bi bi-info-circle"></i> Detaylar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="alert alert-success mt-4">
+        <i class="bi bi-check-circle"></i> 
+        <strong>@Model.Count hesap bulundu.</strong>
+    </div>
+}
+else
+{
+    <div class="alert alert-info">
+        <h5><i class="bi bi-info-circle"></i> Henüz hesabınız yok</h5>
+        <p class="mb-0">Yeni bir hesap oluşturarak başlayabilirsiniz.</p>
+    </div>
+}
+
+<div class="card mt-4 border-info">
+    <div class="card-body">
+        <h6 class="text-info"><i class="bi bi-cloud-arrow-up"></i> Node.js API</h6>
+        <p class="small mb-0">
+            Tüm hesap işlemleri Node.js REST API (<code>http://localhost:3000/api/accounts</code>) 
+            üzerinden yönetilmektedir.
+        </p>
+    </div>
+</div>

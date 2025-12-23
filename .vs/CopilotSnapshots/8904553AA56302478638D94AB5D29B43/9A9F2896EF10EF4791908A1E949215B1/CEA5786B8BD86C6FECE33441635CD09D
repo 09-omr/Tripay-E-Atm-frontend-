@@ -1,0 +1,13 @@
+﻿{
+  "ConnectionStrings": {
+    "PostgreSQL": "Host=localhost;Port=5432;Database=digitalpayment;Username=postgres;Password=postgres"
+  },
+  "NodeApiUrl": "http://localhost:3000",
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}

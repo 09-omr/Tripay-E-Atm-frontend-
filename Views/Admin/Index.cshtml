@@ -1,0 +1,145 @@
+@{
+    ViewBag.PageTitle = "Admin Paneli";
+}
+
+<div class="row mb-4">
+    <div class="col">
+        <h2 class="fw-bold">
+            <i class="bi bi-speedometer2"></i> Admin Dashboard
+        </h2>
+        <p class="text-muted">Sistem istatistikleri ve yönetim paneli</p>
+    </div>
+</div>
+
+<!-- Ýstatistik Kartlarý -->
+<div class="row g-4 mb-4">
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm bg-primary text-white">
+            <div class="card-body text-center">
+                <i class="bi bi-people" style="font-size: 3rem;"></i>
+                <h2 class="mt-2">@ViewBag.TotalUsers</h2>
+                <p class="mb-0">Toplam Kullanýcý</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+                <a asp-action="Users" class="btn btn-light btn-sm w-100">
+                    Kullanýcýlarý Gör <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm bg-success text-white">
+            <div class="card-body text-center">
+                <i class="bi bi-wallet2" style="font-size: 3rem;"></i>
+                <h2 class="mt-2">@ViewBag.TotalAccounts</h2>
+                <p class="mb-0">Toplam Hesap</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+                <a asp-action="Accounts" class="btn btn-light btn-sm w-100">
+                    Hesaplarý Gör <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm bg-info text-white">
+            <div class="card-body text-center">
+                <i class="bi bi-arrow-left-right" style="font-size: 3rem;"></i>
+                <h2 class="mt-2">@ViewBag.TotalTransactions</h2>
+                <p class="mb-0">Toplam Ýþlem</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+                <a asp-action="Transactions" class="btn btn-light btn-sm w-100">
+                    Ýþlemleri Gör <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hýzlý Eriþim Menüsü -->
+<div class="row g-4 mb-4">
+    <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-dark text-white">
+                <h5 class="mb-0"><i class="bi bi-grid"></i> Hýzlý Eriþim</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group list-group-flush">
+                    <a asp-action="Users" class="list-group-item list-group-item-action">
+                        <i class="bi bi-people text-primary"></i> Kullanýcý Yönetimi
+                    </a>
+                    <a asp-action="Accounts" class="list-group-item list-group-item-action">
+                        <i class="bi bi-wallet2 text-success"></i> Hesap Yönetimi
+                    </a>
+                    <a asp-action="Transactions" class="list-group-item list-group-item-action">
+                        <i class="bi bi-arrow-left-right text-info"></i> Ýþlem Yönetimi
+                    </a>
+                    <a asp-action="Reports" class="list-group-item list-group-item-action">
+                        <i class="bi bi-graph-up text-warning"></i> Raporlar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-dark text-white">
+                <h5 class="mb-0"><i class="bi bi-clock-history"></i> Son Ýþlemler</h5>
+            </div>
+            <div class="card-body p-0">
+                @if (ViewBag.RecentTransactions != null && ((List<digitalpayment3.Models.TransactionViewModel>)ViewBag.RecentTransactions).Any())
+                {
+                    <div class="list-group list-group-flush">
+                        @foreach (var tx in (List<digitalpayment3.Models.TransactionViewModel>)ViewBag.RecentTransactions)
+                        {
+                            <div class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        @if (tx.Type == "Deposit")
+                                        {
+                                            <i class="bi bi-arrow-down-circle text-success"></i>
+                                            <span class="fw-bold">Para Yatýrma</span>
+                                        }
+                                        else
+                                        {
+                                            <i class="bi bi-arrow-up-circle text-danger"></i>
+                                            <span class="fw-bold">Para Çekme</span>
+                                        }
+                                        <br />
+                                        <small class="text-muted">Hesap #@tx.AccountId</small>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="fw-bold @(tx.Type == "Deposit" ? "text-success" : "text-danger")">
+                                            @tx.Amount.ToString("N2") TL
+                                        </span>
+                                        <br />
+                                        <small class="text-muted">@tx.CreatedAt.ToString("dd.MM HH:mm")</small>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="p-3 text-center text-muted">
+                        <p class="mb-0">Henüz iþlem bulunmuyor</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bilgi Kartý -->
+<div class="alert alert-warning">
+    <h5><i class="bi bi-shield-exclamation"></i> Yönetici Paneli</h5>
+    <p class="mb-0">
+        Bu sayfa sadece <strong>Admin</strong> kullanýcýlar tarafýndan görülebilir.
+        PostgreSQL veritabanýndan direkt olarak veri çekilmektedir.
+    </p>
+</div>

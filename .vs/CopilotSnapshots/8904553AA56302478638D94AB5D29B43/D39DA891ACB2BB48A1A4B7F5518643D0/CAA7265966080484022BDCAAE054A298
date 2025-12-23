@@ -1,0 +1,105 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using digitalpayment3.Models;
+using digitalpayment3.Data;
+
+namespace digitalpayment3.Controllers
+{
+    [Authorize]
+    public class AccountController : Controller
+    {
+        private readonly AccountRepository _accountRepository;
+
+        public AccountController(IConfiguration configuration)
+        {
+            _accountRepository = new AccountRepository(configuration);
+        }
+
+        public IActionResult Index()
+        {
+            ViewBag.PageTitle = "Hesaplarım";
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "0");
+            var accounts = _accountRepository.GetByUserId(userId);
+            return View(accounts);
+        }
+
+        public IActionResult Details(int id)
+        {
+            ViewBag.PageTitle = "Hesap Detayı";
+            var account = _accountRepository.GetById(id);
+            if (account == null)
+            {
+                TempData["ErrorMessage"] = "Hesap bulunamadı!";
+                return RedirectToAction("Index");
+            }
+            return View(account);
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            ViewBag.PageTitle = "Yeni Hesap Oluştur";
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(AccountViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "0");
+                _accountRepository.Insert(model, userId);
+                TempData["SuccessMessage"] = "Hesap başarıyla oluşturuldu!";
+                return RedirectToAction("Index");
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            ViewBag.PageTitle = "Hesap Düzenle";
+            var account = _accountRepository.GetById(id);
+            if (account == null)
+            {
+                TempData["ErrorMessage"] = "Hesap bulunamadı!";
+                return RedirectToAction("Index");
+            }
+            return View(account);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(AccountViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                _accountRepository.Update(model);
+                TempData["SuccessMessage"] = "Hesap başarıyla güncellendi!";
+                return RedirectToAction("Index");
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            ViewBag.PageTitle = "Hesap Sil";
+            var account = _accountRepository.GetById(id);
+            if (account == null)
+            {
+                TempData["ErrorMessage"] = "Hesap bulunamadı!";
+                return RedirectToAction("Index");
+            }
+            return View(account);
+        }
+
+        [HttpPost]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            _accountRepository.Delete(id);
+            TempData["SuccessMessage"] = "Hesap başarıyla silindi!";
+            return RedirectToAction("Index");
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@{
+    ViewBag.PageTitle = "Teþekkürler";
+}
+
+<div class="row">
+    <div class="col-lg-6 mx-auto">
+        <div class="text-center mb-4">
+            <div class="mb-4">
+                <i class="bi bi-check-circle text-success" style="font-size: 5rem;"></i>
+            </div>
+            <h1 class="display-5 fw-bold text-success">Teþekkürler!</h1>
+            <p class="lead text-muted">@ViewBag.SuccessMessage</p>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+                <h5 class="card-title mb-3">Mesaj Detaylarý</h5>
+                <dl class="row mb-0">
+                    <dt class="col-sm-3">Ad Soyad:</dt>
+                    <dd class="col-sm-9">@ViewBag.ContactName</dd>
+
+                    <dt class="col-sm-3">E-posta:</dt>
+                    <dd class="col-sm-9">@ViewBag.ContactEmail</dd>
+
+                    <dt class="col-sm-3">Mesaj:</dt>
+                    <dd class="col-sm-9">@ViewBag.ContactMessage</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-primary">
+                <i class="bi bi-house"></i> Ana Sayfaya Dön
+            </a>
+        </div>
+
+        <div class="alert alert-info mt-4">
+            <i class="bi bi-info-circle"></i> 
+            Mesajýnýz tarafýmýza ulaþmýþtýr. En kýsa sürede size geri dönüþ yapacaðýz.
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\picac\\source\\repos\\digitalpayment3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AEE9BB-510A-FDA6-9883-619E0F976FEF}|digitalpayment3.csproj|c:\\users\\picac\\source\\repos\\digitalpayment3\\proje_kriter_raporu_detayli.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{F6AEE9BB-510A-FDA6-9883-619E0F976FEF}|digitalpayment3.csproj|solutionrelative:proje_kriter_raporu_detayli.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AEE9BB-510A-FDA6-9883-619E0F976FEF}|digitalpayment3.csproj|c:\\users\\picac\\source\\repos\\digitalpayment3\\kriter_raporu_ozet.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{F6AEE9BB-510A-FDA6-9883-619E0F976FEF}|digitalpayment3.csproj|solutionrelative:kriter_raporu_ozet.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PROJE_KRITER_RAPORU_DETAYLI.md",
+              "DocumentMoniker": "C:\\Users\\picac\\source\\repos\\digitalpayment3\\PROJE_KRITER_RAPORU_DETAYLI.md",
+              "RelativeDocumentMoniker": "PROJE_KRITER_RAPORU_DETAYLI.md",
+              "ToolTip": "C:\\Users\\picac\\source\\repos\\digitalpayment3\\PROJE_KRITER_RAPORU_DETAYLI.md",
+              "RelativeToolTip": "PROJE_KRITER_RAPORU_DETAYLI.md",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-16T19:20:57.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KRITER_RAPORU_OZET.md",
+              "DocumentMoniker": "C:\\Users\\picac\\source\\repos\\digitalpayment3\\KRITER_RAPORU_OZET.md",
+              "RelativeDocumentMoniker": "KRITER_RAPORU_OZET.md",
+              "ToolTip": "C:\\Users\\picac\\source\\repos\\digitalpayment3\\KRITER_RAPORU_OZET.md",
+              "RelativeToolTip": "KRITER_RAPORU_OZET.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-16T19:20:44.35Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

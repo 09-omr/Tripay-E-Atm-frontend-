@@ -1,0 +1,63 @@
+﻿@model List<digitalpayment3.Models.AccountViewModel>
+
+@{
+    ViewBag.PageTitle = "Hesaplarım";
+}
+
+<div class="row mb-4">
+    <div class="col">
+        <h2 class="fw-bold">
+            <i class="bi bi-wallet2"></i> Hesaplarım
+        </h2>
+    </div>
+    <div class="col text-end">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Yeni Hesap
+        </a>
+    </div>
+</div>
+
+@if (Model.Any())
+{
+    <div class="row g-4">
+        @foreach (var account in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                @await Html.PartialAsync("_AccountSummary", account)
+            </div>
+        }
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-8">
+            <h4 class="mb-3"><i class="bi bi-clock-history"></i> Son İşlemler</h4>
+            @await Component.InvokeAsync("RecentTransactions", new { limit = 5 })
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="bi bi-info-circle"></i> Özet</h5>
+                </div>
+                <div class="card-body">
+                    <dl class="row mb-0">
+                        <dt class="col-sm-7">Toplam Hesap:</dt>
+                        <dd class="col-sm-5 text-end"><strong>@Model.Count</strong></dd>
+                        
+                        <dt class="col-sm-7">Aktif Hesap:</dt>
+                        <dd class="col-sm-5 text-end"><strong>@Model.Count(a => a.IsActive)</strong></dd>
+                        
+                        <dt class="col-sm-7">Toplam Bakiye:</dt>
+                        <dd class="col-sm-5 text-end"><strong>@Model.Sum(a => a.Balance).ToString("C")</strong></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-info">
+        <h5><i class="bi bi-info-circle"></i> Henüz hesabınız yok</h5>
+        <p class="mb-0">Yeni bir hesap oluşturarak başlayabilirsiniz.</p>
+    </div>
+}

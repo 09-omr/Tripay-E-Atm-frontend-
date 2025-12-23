@@ -1,0 +1,406 @@
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\digitalpayment3.exe
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\digitalpayment3.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\appsettings.json
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\digitalpayment3.staticwebassets.runtime.json
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\digitalpayment3.staticwebassets.endpoints.json
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\digitalpayment3.deps.json
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\digitalpayment3.runtimeconfig.json
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\digitalpayment3.pdb
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\Grpc.Core.Api.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\Grpc.Net.Client.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\Grpc.Net.Common.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\Npgsql.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Http.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Duplex.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Primitives.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Security.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\cs\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\de\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\es\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\fr\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\it\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\ja\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\ko\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\pl\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\pt-BR\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\ru\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\tr\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\zh-Hans\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\zh-Hant\System.ServiceModel.Http.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\cs\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\de\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\es\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\fr\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\it\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\ja\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\ko\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\pl\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\pt-BR\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\ru\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\tr\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\zh-Hans\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\bin\Debug\net10.0\zh-Hant\System.ServiceModel.Primitives.resources.dll
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.csproj.AssemblyReference.cache
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.AssemblyInfoInputs.cache
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.AssemblyInfo.cs
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.csproj.CoreCompileInputs.cache
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.RazorAssemblyInfo.cache
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.RazorAssemblyInfo.cs
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\scopedcss\bundle\digitalpayment3.styles.css
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\scopedcss\projectbundle\digitalpayment3.bundle.scp.css
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\sncrw0zlls-{0}-6gljo4ed1s-6gljo4ed1s.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\k46rlhcskn-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\knmp5ynedv-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\p9za52j37g-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\othynknwkl-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\myfpxgbtql-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\mkvkntz78q-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\zfxjpoqvfp-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\zbv581vb4i-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\rfvtilcf3t-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\pgj3cvtbbz-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\kngaaz28j6-{0}-ub07r2b239-ub07r2b239.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\3jpubvcpwe-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\lkbmlcmdwd-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\bdjua92qr1-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\m9jmr7c9em-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\yx10wdtden-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\2pmj1qb0fe-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\jqga045rmn-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\0edaiwz7ah-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\ky1kcibr09-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\pgl9i9lmss-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\kpggjo55ld-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\i5sfm8kivb-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\6f3kzo07j1-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\mzp2zhiuno-{0}-06098lyss8-06098lyss8.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\r5xmxifsn6-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\6flwe83blz-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\x90vfksob9-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\8hobc7llxx-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\uwb13wx3zj-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\n6jagqxih1-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\l3cqe4pxim-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\59apcwftnt-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\yuykyx8okv-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\406co6oodb-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\1fl6u6ktms-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\gtxzi7wscz-{0}-493y06b0oq-493y06b0oq.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\w74naae8au-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\x21p9ccgqr-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\zaf3fphi0h-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\kt8f46t7er-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\74bw40q4if-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\ysjm9skzg4-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\2drgjw0bxz-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\3ccm0ft5n0-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\1ch453az8f-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\ucept5eps1-{0}-47otxtyo56-47otxtyo56.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\q33crm8on4-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\bc7gmsu0rf-{0}-356vix0kms-356vix0kms.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\u2sizlopd7-{0}-83jwlth58m-83jwlth58m.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\snqexffcl5-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\4z8lx0ks65-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\pr5v596rij-{0}-ag7o75518u-ag7o75518u.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\se6sm7uh7k-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\zji3erl96b-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\uj2xxpyay6-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\2s1cbsfrwj-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\4ccc6f7igd-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\mob8ev54nn-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\mcwpm3y2ht-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\42uo2cpaxe-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\sfufmksvul-{0}-5rdndt62ap-5rdndt62ap.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\compressed\mxuah7zhnm-{0}-5rdndt62ap-5rdndt62ap.gz
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalp.E16B73F6.Up2Date
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.dll
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\refint\digitalpayment3.dll
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.pdb
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\digitalpayment3.genruntimeconfig.cache
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\ref\digitalpayment3.dll
+C:\Users\picac\source\repos\digitalpayment3\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\appsettings.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\digitalpayment3.staticwebassets.endpoints.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\digitalpayment3.staticwebassets.runtime.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\digitalpayment3.exe
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\digitalpayment3.deps.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\digitalpayment3.runtimeconfig.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\digitalpayment3.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\digitalpayment3.pdb
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\Grpc.Core.Api.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\Grpc.Net.Client.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\Grpc.Net.Common.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\Npgsql.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Http.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Duplex.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Primitives.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Security.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\cs\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\de\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\es\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\fr\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\it\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\ja\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\ko\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\pl\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\pt-BR\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\ru\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\tr\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\zh-Hans\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\zh-Hant\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\cs\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\de\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\es\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\fr\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\it\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\ja\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\ko\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\pl\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\pt-BR\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\ru\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\tr\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\zh-Hans\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\bin\Debug\net10.0\zh-Hant\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.csproj.AssemblyReference.cache
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.AssemblyInfoInputs.cache
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.AssemblyInfo.cs
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.csproj.CoreCompileInputs.cache
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.RazorAssemblyInfo.cache
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.RazorAssemblyInfo.cs
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\scopedcss\bundle\digitalpayment3.styles.css
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\scopedcss\projectbundle\digitalpayment3.bundle.scp.css
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\sncrw0zlls-{0}-6gljo4ed1s-6gljo4ed1s.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\k46rlhcskn-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\knmp5ynedv-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\p9za52j37g-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\othynknwkl-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\myfpxgbtql-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\mkvkntz78q-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\zfxjpoqvfp-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\zbv581vb4i-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\rfvtilcf3t-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\pgj3cvtbbz-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\kngaaz28j6-{0}-ub07r2b239-ub07r2b239.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\3jpubvcpwe-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\lkbmlcmdwd-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\bdjua92qr1-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\m9jmr7c9em-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\yx10wdtden-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\2pmj1qb0fe-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\jqga045rmn-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\0edaiwz7ah-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\ky1kcibr09-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\pgl9i9lmss-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\kpggjo55ld-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\i5sfm8kivb-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\6f3kzo07j1-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\mzp2zhiuno-{0}-06098lyss8-06098lyss8.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\r5xmxifsn6-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\6flwe83blz-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\x90vfksob9-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\8hobc7llxx-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\uwb13wx3zj-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\n6jagqxih1-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\l3cqe4pxim-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\59apcwftnt-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\yuykyx8okv-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\406co6oodb-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\1fl6u6ktms-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\gtxzi7wscz-{0}-493y06b0oq-493y06b0oq.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\w74naae8au-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\x21p9ccgqr-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\zaf3fphi0h-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\kt8f46t7er-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\74bw40q4if-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\ysjm9skzg4-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\2drgjw0bxz-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\3ccm0ft5n0-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\1ch453az8f-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\ucept5eps1-{0}-47otxtyo56-47otxtyo56.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\q33crm8on4-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\bc7gmsu0rf-{0}-356vix0kms-356vix0kms.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\u2sizlopd7-{0}-83jwlth58m-83jwlth58m.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\snqexffcl5-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\4z8lx0ks65-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\pr5v596rij-{0}-ag7o75518u-ag7o75518u.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\se6sm7uh7k-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\zji3erl96b-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\uj2xxpyay6-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\2s1cbsfrwj-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\4ccc6f7igd-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\mob8ev54nn-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\mcwpm3y2ht-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\42uo2cpaxe-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\sfufmksvul-{0}-5rdndt62ap-5rdndt62ap.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\compressed\mxuah7zhnm-{0}-5rdndt62ap-5rdndt62ap.gz
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalp.E16B73F6.Up2Date
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\refint\digitalpayment3.dll
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.pdb
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\digitalpayment3.genruntimeconfig.cache
+C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\obj\Debug\net10.0\ref\digitalpayment3.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\appsettings.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\digitalpayment3.staticwebassets.endpoints.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\package-lock.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\digitalpayment3.staticwebassets.runtime.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\digitalpayment3.exe
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\digitalpayment3.deps.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\digitalpayment3.runtimeconfig.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\digitalpayment3.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\digitalpayment3.pdb
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\Grpc.Core.Api.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\Grpc.Net.Client.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\Grpc.Net.Common.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\Npgsql.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Http.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Duplex.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Primitives.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.Security.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\System.ServiceModel.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\cs\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\de\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\es\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\fr\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\it\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\ja\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\ko\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\pl\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\pt-BR\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\ru\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\tr\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\zh-Hans\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\zh-Hant\System.ServiceModel.Http.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\cs\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\de\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\es\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\fr\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\it\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\ja\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\ko\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\pl\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\pt-BR\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\ru\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\tr\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\zh-Hans\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\bin\Debug\net10.0\zh-Hant\System.ServiceModel.Primitives.resources.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.csproj.AssemblyReference.cache
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.AssemblyInfoInputs.cache
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.AssemblyInfo.cs
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.csproj.CoreCompileInputs.cache
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.RazorAssemblyInfo.cache
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.RazorAssemblyInfo.cs
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\scopedcss\bundle\digitalpayment3.styles.css
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\scopedcss\projectbundle\digitalpayment3.bundle.scp.css
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\sncrw0zlls-{0}-6gljo4ed1s-6gljo4ed1s.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\k46rlhcskn-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\knmp5ynedv-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\p9za52j37g-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\othynknwkl-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\myfpxgbtql-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\mkvkntz78q-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\zfxjpoqvfp-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\zbv581vb4i-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\rfvtilcf3t-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\pgj3cvtbbz-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\kngaaz28j6-{0}-ub07r2b239-ub07r2b239.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\3jpubvcpwe-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\lkbmlcmdwd-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\bdjua92qr1-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\m9jmr7c9em-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\yx10wdtden-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\2pmj1qb0fe-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\jqga045rmn-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\0edaiwz7ah-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\ky1kcibr09-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\pgl9i9lmss-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\kpggjo55ld-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\i5sfm8kivb-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\6f3kzo07j1-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\mzp2zhiuno-{0}-06098lyss8-06098lyss8.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\r5xmxifsn6-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\6flwe83blz-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\x90vfksob9-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\8hobc7llxx-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\uwb13wx3zj-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\n6jagqxih1-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\l3cqe4pxim-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\59apcwftnt-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\yuykyx8okv-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\406co6oodb-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\1fl6u6ktms-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\gtxzi7wscz-{0}-493y06b0oq-493y06b0oq.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\w74naae8au-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\x21p9ccgqr-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\zaf3fphi0h-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\kt8f46t7er-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\74bw40q4if-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\ysjm9skzg4-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\2drgjw0bxz-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\3ccm0ft5n0-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\1ch453az8f-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\ucept5eps1-{0}-47otxtyo56-47otxtyo56.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\q33crm8on4-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\bc7gmsu0rf-{0}-356vix0kms-356vix0kms.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\u2sizlopd7-{0}-83jwlth58m-83jwlth58m.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\snqexffcl5-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\4z8lx0ks65-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\pr5v596rij-{0}-ag7o75518u-ag7o75518u.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\se6sm7uh7k-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\zji3erl96b-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\uj2xxpyay6-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\2s1cbsfrwj-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\4ccc6f7igd-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\mob8ev54nn-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\mcwpm3y2ht-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\42uo2cpaxe-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\sfufmksvul-{0}-5rdndt62ap-5rdndt62ap.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\compressed\mxuah7zhnm-{0}-5rdndt62ap-5rdndt62ap.gz
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalp.E16B73F6.Up2Date
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\refint\digitalpayment3.dll
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.pdb
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\digitalpayment3.genruntimeconfig.cache
+C:\Users\damar\OneDrive\Masaüstü\Tripay Projesi\digitalpayment3\obj\Debug\net10.0\ref\digitalpayment3.dll

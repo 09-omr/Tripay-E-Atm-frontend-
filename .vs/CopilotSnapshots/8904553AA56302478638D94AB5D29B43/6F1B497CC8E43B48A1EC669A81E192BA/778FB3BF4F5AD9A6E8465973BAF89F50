@@ -1,0 +1,131 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Security.Claims;
+using digitalpayment3.Models;
+using digitalpayment3.Services;
+using digitalpayment3.Data;
+
+namespace digitalpayment3.Controllers
+{
+    public class AuthController : Controller
+    {
+        private readonly NodeApiService _nodeApiService;
+        private readonly UserRepository _userRepository;
+
+        public AuthController(NodeApiService nodeApiService, IConfiguration configuration)
+        {
+            _nodeApiService = nodeApiService;
+            _userRepository = new UserRepository(configuration);
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            ViewBag.PageTitle = "Giriş Yap";
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                // PostgreSQL'den kullanıcıyı kontrol et (ROL BİLGİSİ İÇİN)
+                var user = _userRepository.GetByEmailAndPassword(model.Email, model.Password);
+                
+                if (user != null)
+                {
+                    // Session için Node API token'ı al (opsiyonel)
+                    var apiResult = await _nodeApiService.LoginAsync(model.Email, model.Password);
+                    if (apiResult.Success && apiResult.Data != null)
+                    {
+                        HttpContext.Session.SetString("NodeApiToken", apiResult.Data.Token);
+                    }
+                    
+                    // Claims oluştur (ROLE PostgreSQL'den geliyor)
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                        new Claim(ClaimTypes.Name, user.FullName),
+                        new Claim(ClaimTypes.Email, user.Email),
+                        new Claim(ClaimTypes.Role, user.Role) // Admin veya User
+                    };
+
+                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                    var authProperties = new AuthenticationProperties
+                    {
+                        IsPersistent = model.RememberMe
+                    };
+
+                    await HttpContext.SignInAsync(
+                        CookieAuthenticationDefaults.AuthenticationScheme,
+                        new ClaimsPrincipal(claimsIdentity),
+                        authProperties);
+
+                    TempData["SuccessMessage"] = $"Hoş geldiniz, {user.FullName}!";
+                    
+                    // Admin ise admin paneline yönlendir
+                    if (user.Role == "Admin")
+                        return RedirectToAction("Index", "Admin");
+                    else
+                        return RedirectToAction("Index", "Account");
+                }
+                
+                ModelState.AddModelError("", "E-posta veya şifre hatalı!");
+            }
+
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Register()
+        {
+            ViewBag.PageTitle = "Kayıt Ol";
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(string email, string password, string fullName)
+        {
+            // Node API'ye kayıt yap
+            var result = await _nodeApiService.RegisterAsync(email, password, fullName);
+            
+            if (result.Success && result.Data != null)
+            {
+                var user = result.Data.User;
+                
+                HttpContext.Session.SetString("NodeApiToken", result.Data.Token);
+                
+                // Yeni kullanıcı her zaman User rolüyle başlar
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                    new Claim(ClaimTypes.Name, user.FullName),
+                    new Claim(ClaimTypes.Email, user.Email),
+                    new Claim(ClaimTypes.Role, "User")
+                };
+
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                await HttpContext.SignInAsync(
+                    CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(claimsIdentity),
+                    new AuthenticationProperties { IsPersistent = false });
+
+                TempData["SuccessMessage"] = $"Hoş geldiniz, {user.FullName}! Hesabınız oluşturuldu.";
+                return RedirectToAction("Index", "Account");
+            }
+
+            TempData["ErrorMessage"] = result.ErrorMessage ?? "Kayıt işlemi başarısız!";
+            return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Remove("NodeApiToken");
+            TempData["SuccessMessage"] = "Başarıyla çıkış yaptınız.";
+            return RedirectToAction("Index", "Home");
+        }
+    }
+}

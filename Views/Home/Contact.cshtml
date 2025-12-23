@@ -1,0 +1,68 @@
+@model digitalpayment3.Models.ContactViewModel
+
+@{
+    ViewBag.PageTitle = "Ýletiþim";
+}
+
+<div class="row">
+    <div class="col-lg-6 mx-auto">
+        <div class="text-center mb-4">
+            <h1 class="display-5 fw-bold text-primary">Ýletiþim</h1>
+            <p class="lead text-muted">Bizimle iletiþime geçin</p>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+                <form asp-action="Contact" method="post">
+                    <div class="mb-3">
+                        <label asp-for="FullName" class="form-label">Ad Soyad</label>
+                        <input asp-for="FullName" class="form-control" placeholder="Adýnýz ve soyadýnýz" />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">E-posta</label>
+                        <input asp-for="Email" class="form-control" type="email" placeholder="ornek@email.com" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Message" class="form-label">Mesajýnýz</label>
+                        <textarea asp-for="Message" class="form-control" rows="5" placeholder="Mesajýnýzý buraya yazýn..."></textarea>
+                        <span asp-validation-for="Message" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="bi bi-send"></i> Gönder
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h6 class="mb-3">Diðer Ýletiþim Yollarý</h6>
+                    <p class="mb-2">
+                        <i class="bi bi-envelope text-primary"></i> 
+                        <strong>E-posta:</strong> destek@dijitalodeme.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="bi bi-telephone text-primary"></i> 
+                        <strong>Telefon:</strong> +90 (212) 555 0 123
+                    </p>
+                    <p class="mb-0">
+                        <i class="bi bi-geo-alt text-primary"></i> 
+                        <strong>Adres:</strong> Ýstanbul, Türkiye
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

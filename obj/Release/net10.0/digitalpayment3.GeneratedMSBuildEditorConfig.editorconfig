@@ -1,0 +1,159 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = digitalpayment3
+build_property.RootNamespace = digitalpayment3
+build_property.ProjectDir = C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\damar\OneDrive\Masaüstü\mehmetaliödev\mehmetaliödev\digitalpayment3
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Account/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Account/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Account/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Account/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Admin/Accounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWNjb3VudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Admin/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Admin/Transactions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVHJhbnNhY3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Admin/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Home/ThankYou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUaGFua1lvdS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/NodeApi/ApiAccounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9kZUFwaVxBcGlBY2NvdW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/NodeApi/ApiCreateAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9kZUFwaVxBcGlDcmVhdGVBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/NodeApi/ApiDeposit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9kZUFwaVxBcGlEZXBvc2l0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/NodeApi/ApiLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9kZUFwaVxBcGlMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/NodeApi/ApiRates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9kZUFwaVxBcGlSYXRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/NodeApi/ApiRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9kZUFwaVxBcGlSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/NodeApi/ApiWithdraw.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9kZUFwaVxBcGlXaXRoZHJhdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/NodeApi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm9kZUFwaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Shared/Components/RecentTransactions/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVjZW50VHJhbnNhY3Rpb25zXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Shared/_AccountSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50U3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Transaction/Deposit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cRGVwb3NpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Transaction/Summary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cU3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Transaction/Withdraw.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cV2l0aGRyYXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/damar/OneDrive/Masaüstü/mehmetaliödev/mehmetaliödev/digitalpayment3/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qjtlt1a0xp

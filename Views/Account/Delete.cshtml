@@ -1,0 +1,89 @@
+@model digitalpayment3.Models.AccountViewModel
+
+@{
+    ViewBag.PageTitle = "Hesap Sil";
+}
+
+<div class="row">
+    <div class="col-lg-6 mx-auto">
+        <h2 class="fw-bold mb-4 text-danger">
+            <i class="bi bi-trash"></i> Hesap Sil
+        </h2>
+
+        <div class="card shadow-sm border-danger">
+            <div class="card-header bg-danger text-white">
+                <h5 class="mb-0">
+                    <i class="bi bi-exclamation-triangle"></i> Dikkat!
+                </h5>
+            </div>
+            <div class="card-body">
+                <p class="alert alert-warning">
+                    Bu hesabý silmek istediðinizden emin misiniz? Bu iþlem <strong>geri alýnamaz</strong>!
+                </p>
+
+                <dl class="row">
+                    <dt class="col-sm-4">Hesap ID:</dt>
+                    <dd class="col-sm-8"><strong>#@Model.Id</strong></dd>
+
+                    <dt class="col-sm-4">Hesap Sahibi:</dt>
+                    <dd class="col-sm-8">@Model.OwnerName</dd>
+
+                    <dt class="col-sm-4">Para Birimi:</dt>
+                    <dd class="col-sm-8">@Model.Currency</dd>
+
+                    <dt class="col-sm-4">Bakiye:</dt>
+                    <dd class="col-sm-8">
+                        <strong class="@(Model.Balance > 0 ? "text-danger" : "text-success")">
+                            @Model.Balance.ToString("N2") @Model.Currency
+                        </strong>
+                    </dd>
+
+                    <dt class="col-sm-4">Durum:</dt>
+                    <dd class="col-sm-8">
+                        @if (Model.IsActive)
+                        {
+                            <span class="badge bg-success">Aktif</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Pasif</span>
+                        }
+                    </dd>
+
+                    <dt class="col-sm-4">Oluþturma Tarihi:</dt>
+                    <dd class="col-sm-8">@Model.CreatedAt.ToString("dd.MM.yyyy HH:mm")</dd>
+                </dl>
+
+                @if (Model.Balance > 0)
+                {
+                    <div class="alert alert-danger">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <strong>Uyarý:</strong> Bu hesapta <strong>@Model.Balance.ToString("N2") @Model.Currency</strong> bakiye var!
+                        Bakiyesi olan hesaplar silinemez. Önce bakiyeyi sýfýrlayýn.
+                    </div>
+                }
+
+                <form asp-action="Delete" method="post" class="mt-3">
+                    <input type="hidden" asp-for="Id" />
+                    <div class="d-flex gap-2">
+                        @if (Model.Balance == 0)
+                        {
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Bu hesabý silmek istediðinizden emin misiniz?')">
+                                <i class="bi bi-trash"></i> Evet, Sil
+                            </button>
+                        }
+                        else
+                        {
+                            <button type="button" class="btn btn-danger" disabled>
+                                <i class="bi bi-x-circle"></i> Silinemez (Bakiye Var)
+                            </button>
+                        }
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Ýptal
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

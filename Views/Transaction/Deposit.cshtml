@@ -1,0 +1,60 @@
+@{
+    ViewBag.PageTitle = "Para Yatýr";
+    var account = ViewBag.Account as digitalpayment3.Services.AccountInfo;
+}
+
+<div class="row">
+    <div class="col-lg-6 mx-auto">
+        <h2 class="fw-bold mb-4 text-success">
+            <i class="bi bi-plus-circle"></i> Para Yatýr
+        </h2>
+
+        @if (account != null)
+        {
+            <div class="card shadow-sm border-0 mb-3">
+                <div class="card-body">
+                    <h6 class="text-muted mb-2">Hesap Bilgileri</h6>
+                    <p class="mb-1"><strong>Hesap ID:</strong> #@account.Id</p>
+                    <p class="mb-1"><strong>Para Birimi:</strong> @account.Currency</p>
+                    <p class="mb-0"><strong>Mevcut Bakiye:</strong> <span class="text-primary fs-5">@account.Balance @account.Currency</span></p>
+                </div>
+            </div>
+
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4">
+                    <form asp-action="Deposit" method="post">
+                        <input type="hidden" name="accountId" value="@account.Id" />
+
+                        <div class="mb-3">
+                            <label class="form-label">Yatýrýlacak Tutar</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text"><i class="bi bi-currency-exchange"></i></span>
+                                <input name="amount" type="number" step="0.01" class="form-control" placeholder="0.00" required />
+                                <span class="input-group-text">@account.Currency</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Açýklama (Opsiyonel)</label>
+                            <textarea name="description" class="form-control" rows="3" placeholder="Ýþlem açýklamasý..."></textarea>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="bi bi-info-circle"></i> 
+                            Para yatýrma iþlemi Node.js API üzerinden anýnda gerçekleþtirilecektir.
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <i class="bi bi-check-circle"></i> Para Yatýr
+                            </button>
+                            <a asp-controller="Account" asp-action="Index" class="btn btn-secondary btn-lg">
+                                <i class="bi bi-x-circle"></i> Ýptal
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+</div>

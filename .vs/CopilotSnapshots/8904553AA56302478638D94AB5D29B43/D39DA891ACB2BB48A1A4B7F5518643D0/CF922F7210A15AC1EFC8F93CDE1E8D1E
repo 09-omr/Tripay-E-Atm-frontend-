@@ -1,0 +1,65 @@
+﻿@model digitalpayment3.Models.DepositViewModel
+
+@{
+    ViewBag.PageTitle = "Para Yatır";
+    var account = ViewBag.Account as digitalpayment3.Models.AccountViewModel;
+}
+
+<div class="row">
+    <div class="col-lg-6 mx-auto">
+        <h2 class="fw-bold mb-4 text-success">
+            <i class="bi bi-plus-circle"></i> Para Yatır
+        </h2>
+
+        <div class="card shadow-sm border-0 mb-3">
+            <div class="card-body">
+                <h6 class="text-muted mb-2">Hesap Bilgileri</h6>
+                <p class="mb-1"><strong>Hesap Sahibi:</strong> @account?.OwnerName</p>
+                <p class="mb-1"><strong>Mevcut Bakiye:</strong> <span class="text-primary fs-5">@account?.Balance.ToString("C")</span></p>
+                <p class="mb-0"><strong>Para Birimi:</strong> @account?.Currency</p>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+                <form asp-action="Deposit" method="post">
+                    <input type="hidden" asp-for="AccountId" />
+
+                    <div class="mb-3">
+                        <label asp-for="Amount" class="form-label">Yatırılacak Tutar</label>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text"><i class="bi bi-currency-exchange"></i></span>
+                            <input asp-for="Amount" class="form-control" type="number" step="0.01" placeholder="0.00" />
+                            <span class="input-group-text">@account?.Currency</span>
+                        </div>
+                        <span asp-validation-for="Amount" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label">Açıklama (Opsiyonel)</label>
+                        <textarea asp-for="Description" class="form-control" rows="3" placeholder="İşlem açıklaması..."></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle"></i> 
+                        Para yatırma işlemi anında gerçekleştirilecektir.
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-success btn-lg">
+                            <i class="bi bi-check-circle"></i> Para Yatır
+                        </button>
+                        <a asp-controller="Account" asp-action="Index" class="btn btn-secondary btn-lg">
+                            <i class="bi bi-x-circle"></i> İptal
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

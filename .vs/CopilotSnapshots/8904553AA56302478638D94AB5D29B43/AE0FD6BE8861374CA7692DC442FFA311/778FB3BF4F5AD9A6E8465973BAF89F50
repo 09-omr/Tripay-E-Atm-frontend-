@@ -1,0 +1,75 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Security.Claims;
+using digitalpayment3.Models;
+using digitalpayment3.Data;
+
+namespace digitalpayment3.Controllers
+{
+    public class AuthController : Controller
+    {
+        private readonly UserRepository _userRepository;
+
+        public AuthController(IConfiguration configuration)
+        {
+            _userRepository = new UserRepository(configuration);
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            ViewBag.PageTitle = "Giriş Yap";
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = _userRepository.GetByEmailAndPassword(model.Email, model.Password);
+                
+                if (user != null)
+                {
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                        new Claim(ClaimTypes.Name, user.FullName),
+                        new Claim(ClaimTypes.Email, user.Email),
+                        new Claim(ClaimTypes.Role, user.Role)
+                    };
+
+                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                    var authProperties = new AuthenticationProperties
+                    {
+                        IsPersistent = model.RememberMe
+                    };
+
+                    await HttpContext.SignInAsync(
+                        CookieAuthenticationDefaults.AuthenticationScheme,
+                        new ClaimsPrincipal(claimsIdentity),
+                        authProperties);
+
+                    TempData["SuccessMessage"] = $"Hoş geldiniz, {user.FullName}!";
+                    
+                    if (user.Role == "Admin")
+                        return RedirectToAction("Index", "Admin");
+                    else
+                        return RedirectToAction("Index", "Account");
+                }
+                
+                ModelState.AddModelError("", "E-posta veya şifre hatalı!");
+            }
+
+            return View(model);
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            TempData["SuccessMessage"] = "Başarıyla çıkış yaptınız.";
+            return RedirectToAction("Index", "Home");
+        }
+    }
+}

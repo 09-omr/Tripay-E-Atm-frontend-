@@ -1,0 +1,191 @@
+﻿using System.Text.Json;
+using System.Text;
+
+namespace digitalpayment3.Services
+{
+    public class NodeApiService
+    {
+        private readonly HttpClient _httpClient;
+        private readonly string _baseUrl;
+
+        public NodeApiService(HttpClient httpClient, IConfiguration configuration)
+        {
+            _httpClient = httpClient;
+            _baseUrl = configuration["NodeApiSettings:BaseUrl"] ?? "http://localhost:3000";
+        }
+
+        // AUTH API'leri
+        public async Task<NodeApiResponse<LoginResponse>> RegisterAsync(string email, string password, string fullName)
+        {
+            var payload = new { email, password, fullName };
+            return await PostAsync<LoginResponse>("/api/auth/register", payload);
+        }
+
+        public async Task<NodeApiResponse<LoginResponse>> LoginAsync(string email, string password)
+        {
+            var payload = new { email, password };
+            return await PostAsync<LoginResponse>("/api/auth/login", payload);
+        }
+
+        public async Task<NodeApiResponse<UserInfo>> GetMeAsync(string token)
+        {
+            return await GetAsync<UserInfo>("/api/auth/me", token);
+        }
+
+        // HESAP API'leri
+        public async Task<NodeApiResponse<AccountInfo>> CreateAccountAsync(string token, string currency)
+        {
+            var payload = new { currency };
+            return await PostAsync<AccountInfo>("/api/accounts", payload, token);
+        }
+
+        public async Task<NodeApiResponse<List<AccountInfo>>> GetMyAccountsAsync(string token)
+        {
+            return await GetAsync<List<AccountInfo>>("/api/accounts/me", token);
+        }
+
+        public async Task<NodeApiResponse<AccountInfo>> GetAccountByIdAsync(string token, int accountId)
+        {
+            return await GetAsync<AccountInfo>($"/api/accounts/{accountId}", token);
+        }
+
+        public async Task<NodeApiResponse<AccountInfo>> DepositAsync(string token, int accountId, decimal amount, string description)
+        {
+            var payload = new { amount, description };
+            return await PostAsync<AccountInfo>($"/api/accounts/{accountId}/deposit", payload, token);
+        }
+
+        public async Task<NodeApiResponse<AccountInfo>> WithdrawAsync(string token, int accountId, decimal amount, string description)
+        {
+            var payload = new { amount, description };
+            return await PostAsync<AccountInfo>($"/api/accounts/{accountId}/withdraw", payload, token);
+        }
+
+        // DÖVİZ API
+        public async Task<NodeApiResponse<ExchangeRates>> GetRatesAsync(string baseCurrency = "TRY")
+        {
+            return await GetAsync<ExchangeRates>($"/api/rates?base={baseCurrency}");
+        }
+
+        // Yardımcı metodlar
+        private async Task<NodeApiResponse<T>> GetAsync<T>(string endpoint, string? token = null)
+        {
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Get, $"{_baseUrl}{endpoint}");
+                if (!string.IsNullOrEmpty(token))
+                {
+                    request.Headers.Add("Authorization", $"Bearer {token}");
+                }
+
+                var response = await _httpClient.SendAsync(request);
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var data = JsonSerializer.Deserialize<T>(content, new JsonSerializerOptions 
+                    { 
+                        PropertyNameCaseInsensitive = true 
+                    });
+                    return new NodeApiResponse<T> { Success = true, Data = data };
+                }
+
+                return new NodeApiResponse<T> 
+                { 
+                    Success = false, 
+                    ErrorMessage = $"API Hatası: {response.StatusCode} - {content}" 
+                };
+            }
+            catch (Exception ex)
+            {
+                return new NodeApiResponse<T> 
+                { 
+                    Success = false, 
+                    ErrorMessage = $"Bağlantı hatası: {ex.Message}" 
+                };
+            }
+        }
+
+        private async Task<NodeApiResponse<T>> PostAsync<T>(string endpoint, object payload, string? token = null)
+        {
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Post, $"{_baseUrl}{endpoint}");
+                if (!string.IsNullOrEmpty(token))
+                {
+                    request.Headers.Add("Authorization", $"Bearer {token}");
+                }
+
+                var json = JsonSerializer.Serialize(payload);
+                request.Content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await _httpClient.SendAsync(request);
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var data = JsonSerializer.Deserialize<T>(content, new JsonSerializerOptions 
+                    { 
+                        PropertyNameCaseInsensitive = true 
+                    });
+                    return new NodeApiResponse<T> { Success = true, Data = data };
+                }
+
+                return new NodeApiResponse<T> 
+                { 
+                    Success = false, 
+                    ErrorMessage = $"API Hatası: {response.StatusCode} - {content}" 
+                };
+            }
+            catch (Exception ex)
+            {
+                return new NodeApiResponse<T> 
+                { 
+                    Success = false, 
+                    ErrorMessage = $"Bağlantı hatası: {ex.Message}" 
+                };
+            }
+        }
+    }
+
+    // Response Models
+    public class NodeApiResponse<T>
+    {
+        public bool Success { get; set; }
+        public T? Data { get; set; }
+        public string? ErrorMessage { get; set; }
+    }
+
+    public class LoginResponse
+    {
+        public UserInfo User { get; set; } = new();
+        public string Token { get; set; } = string.Empty;
+    }
+
+    public class UserInfo
+    {
+        public int Id { get; set; }
+        public string Email { get; set; } = string.Empty;
+        public string FullName { get; set; } = string.Empty;
+        public bool IsActive { get; set; } = true;
+        public DateTime CreatedAt { get; set; }
+    }
+
+    public class AccountInfo
+    {
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public string Currency { get; set; } = string.Empty;
+        public string Balance { get; set; } = "0.00";
+        public bool IsActive { get; set; } = true;
+        public DateTime CreatedAt { get; set; }
+    }
+
+    public class ExchangeRates
+    {
+        public decimal Amount { get; set; }
+        public string Base { get; set; } = string.Empty;
+        public string Date { get; set; } = string.Empty;
+        public Dictionary<string, decimal> Rates { get; set; } = new();
+    }
+}
