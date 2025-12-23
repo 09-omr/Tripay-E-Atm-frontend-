@@ -8,7 +8,7 @@
 - ? **Balance** artýk düzenlenemiyor (hidden field)
 - ? **OwnerName** readonly (deðiþtirilemez)
 - ? Sadece **Currency** ve **IsActive** düzenlenebilir
-- ? Bakiye sadece **Para Yatýr/Çek** iþlemleriyle deðiþir
+- ? Bakiye sadece **Para Yatýr/Çek** iþlemleriyle deðiþirir.
 
 **Form:**
 ```razor
