@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\damar\\OneDrive\\Masa\u00FCst\u00FC\\Tripay Projesi\\digitalpayment3\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\avcim\\OneDrive\\Masa\u00FCst\u00FC\\Tripay Front\\Tripay-E-Atm-frontend-\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6AEE9BB-510A-FDA6-9883-619E0F976FEF}|digitalpayment3.csproj|c:\\users\\avcim\\onedrive\\masa\u00FCst\u00FC\\tripay front\\tripay-e-atm-frontend-\\yeni_ozellikler.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{F6AEE9BB-510A-FDA6-9883-619E0F976FEF}|digitalpayment3.csproj|solutionrelative:yeni_ozellikler.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "YENI_OZELLIKLER.md",
+              "DocumentMoniker": "C:\\Users\\avcim\\OneDrive\\Masa\u00FCst\u00FC\\Tripay Front\\Tripay-E-Atm-frontend-\\YENI_OZELLIKLER.md",
+              "RelativeDocumentMoniker": "YENI_OZELLIKLER.md",
+              "ToolTip": "C:\\Users\\avcim\\OneDrive\\Masa\u00FCst\u00FC\\Tripay Front\\Tripay-E-Atm-frontend-\\YENI_OZELLIKLER.md",
+              "RelativeToolTip": "YENI_OZELLIKLER.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-23T18:15:35.589Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -65,7 +65,7 @@
 
 ---
 
-# 3?? PARTIALVIEW & VIEWCOMPONENT (10 PUAN) ?
+# 3?? PARTIALVIEW & VIEWCOMPONENT (10 PUEN) ?
 
 ## PartialView: _AccountSummary.cshtml
 
